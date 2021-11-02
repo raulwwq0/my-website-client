@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@vue/cli": "^4.5.14",
-    "axios": "^0.23.0",
+    "axios": "^0.24.0",
     "core-js": "^3.19.0",
     "emailjs-com": "^2.6.4",
     "gsap": "^3.8.0",

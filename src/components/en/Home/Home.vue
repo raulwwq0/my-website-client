@@ -10,7 +10,7 @@ import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 
 export default {
-    name: 'Home',
+    name: 'MyHome',
     components: {
         PresentationBanner,
         AboutMe,

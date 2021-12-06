@@ -6,7 +6,7 @@
 import gsap from "gsap";
 
 export default {
-  name: "Background",
+  name: "MyBackground",
   setup() {
     // This function create the boxes for the background
     function createBackground() {

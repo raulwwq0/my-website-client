@@ -79,7 +79,7 @@ import store from "../store";
 import Buttons from "./Buttons";
 
 export default {
-  name: "Sidebar",
+  name: "MySidebar",
   components: {
     Buttons,
   },

@@ -23,7 +23,7 @@ import store from "../store";
 import router from "../router/router";
 
 export default {
-  name: "Buttons",
+  name: "MyButtons",
   setup() {
     function changeLang() {
       store.commit("CHANGE_LANG");

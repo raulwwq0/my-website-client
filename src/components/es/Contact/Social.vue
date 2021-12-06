@@ -64,7 +64,7 @@
 import gsap from "gsap";
 
 export default {
-  name: "Social",
+  name: "MySocial",
   setup() {
     function iconHoverON(icon) {
       let imgName = "." + icon + "-svg";

@@ -12,7 +12,7 @@ import EmailForm from "./EmailForm";
 import Social from "./Social";
 
 export default {
-  name: "Contact",
+  name: "MyContact",
   components: {
     EmailForm,
     Social,

@@ -20,7 +20,7 @@ import { ref, onBeforeMount, watchEffect } from "vue";
 import store from "../store";
 
 export default {
-  name: "Error",
+  name: "MyError",
   setup() {
     function checkLang(lang) {
       if (lang.value === null) {

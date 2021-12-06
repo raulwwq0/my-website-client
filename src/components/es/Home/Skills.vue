@@ -21,6 +21,6 @@
 
 <script>
 export default {
-  name: "Skills",
+  name: "MySkills",
 };
 </script>

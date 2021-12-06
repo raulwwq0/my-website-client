@@ -30,6 +30,6 @@
 
 <script>
 export default {
-  name: "AboutMe",
+  name: "MyAboutMe",
 };
 </script>

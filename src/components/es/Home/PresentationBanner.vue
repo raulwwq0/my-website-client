@@ -9,6 +9,6 @@
 
 <script>
 export default {
-  name: "PresentationBanner",
+  name: "MyPresentationBanner",
 };
 </script>

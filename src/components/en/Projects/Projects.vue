@@ -32,9 +32,15 @@
 
         <p>{{ project.description_en }}</p>
 
-        <form id="web-button" :action="project.link" target="_blank" v-if="project.link">
-          <button>Go to the web</button>
-        </form>
+        <div id="buttons">
+          <form id="repo-button" :action="project.repo" target="_blank" v-if="project.repo">
+            <button>See repository</button>
+          </form>
+
+          <form id="web-button" :action="project.link" target="_blank" v-if="project.link">
+            <button>Go to the web</button>
+          </form>
+        </div>
       </div>
     </article>
   </div>
@@ -51,7 +57,7 @@ import gsap from "gsap";
 import axios from "axios";
 
 export default {
-  name: "Projects",
+  name: "MyProjects",
   data() {
     return {
       projects: [],

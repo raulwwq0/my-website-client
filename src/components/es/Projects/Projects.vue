@@ -3,7 +3,7 @@
 
   <p id="projects-section-text" class="section-text">
     Esta es la lista de todos los proyectos que he realizado desde mis comienzos
-    como desarrollador web. Visita mi GitHub para ver los repositorios de cada
+    como desarrollador. Visita mi GitHub para ver los repositorios de cada
     proyecto.
   </p>
 

@@ -17,7 +17,7 @@
       </p>
       <p>
         Actualmente mi meta es el desarrollo web, sin descartar a largo plazo el
-        desarrollo de aplicaciones.
+        desarrollo de aplicaciones móviles y videojuegos.
       </p>
     </div>
     <picture>

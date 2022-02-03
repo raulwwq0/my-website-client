@@ -16,8 +16,8 @@
         to do my best.
       </p>
       <p>
-        Nowadays, my main goal is web development. However, in a future I would
-        also like to learn application development.
+        Nowadays, my main goal is web development, without forgetting about mobile 
+        and videogames development.
       </p>
     </div>
     <picture>

@@ -2,7 +2,7 @@
   <h1 class="title">Projects</h1>
 
   <p id="projects-section-text" class="section-text">
-    Here you have a list of all the projects I did since I started as a web developer.
+    Here you have a list of all the projects I did since I started as a developer.
     Visit my GitHub profile to see every repository of each project.
   </p>
 

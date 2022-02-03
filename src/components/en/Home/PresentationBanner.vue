@@ -2,7 +2,7 @@
   <div id="presentation-banner">
     <div id="presentation-text">
       <h1 class="presentation-title">Raúl Aguilar</h1>
-      <h2 class="subtitle">Web Development Student</h2>
+      <h2 class="subtitle">Software Development Student</h2>
     </div>
   </div>
 </template>

@@ -18,6 +18,9 @@ export default {
     Sidebar,
     Background,
   },
+  /*
+  Take the lang from localStore and asign it to a var
+  */
   setup() {
     var lang = ref(localStorage.getItem('lang'));
 

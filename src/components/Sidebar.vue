@@ -84,12 +84,19 @@ export default {
     Buttons,
   },
   setup() {
+    // By default, the sidebar is closed
     var isSidebarOFF = ref(true);
 
+    // This function is called when the hamburger is clicked, and it changes the status of the sidebar
     function sidebarChangeStatus() {
+
+      // Creating a GSAP timeline
       const sidebarTimeline = gsap.timeline({ defaults: { duration: 0.3 } });
 
+      // Depending on the screen width, the animation change
       if (screen.width > 900) {
+
+        // If the sidebar is close, it will extend it
         if (!isSidebarOFF.value) {
           sidebarTimeline
             .to("#sidebar", { width: "160px" })
@@ -99,6 +106,7 @@ export default {
             .to(".content", { marginLeft: "160px" }, 0)
             .to(".icon-wrap", { width: "150px" }, 0);
         } else {
+          // If the sidebar is open, it will close it
           sidebarTimeline
             .to("#options-buttons", { display: "none", opacity: 0 })
             .to(".icon-text", { opacity: 0, display: "none" }, 0)
@@ -107,6 +115,7 @@ export default {
             .to(".content", { marginLeft: "40px" }, "<0");
         }
       } else {
+        // Same as the above, but with different values
         if (!isSidebarOFF.value) {
           sidebarTimeline
             .to("#sidebar", { width: "160px" })
@@ -129,11 +138,15 @@ export default {
         }
       }
 
+      // Change the status value
       isSidebarOFF.value = !isSidebarOFF.value;
     }
 
+    // Check what is the current language and store it in the Vuex store
     function checkLang(lang){
       if (lang.value === null) {
+
+        // If the language is not set, it will check the browser language
         var userLang = navigator.language || navigator.userLanguage;
 
         if (userLang.includes("es")) {
@@ -146,16 +159,20 @@ export default {
       }
     }
 
+    // Get the current lang valor from the Vuex store
     var lang = ref(store.state.lang);
 
+    // When the lang value changes, it will update the Vuex store
     watchEffect(() => {
       lang.value = store.state.lang;
     });
 
+    // When the component is not even mounted, it will check the current language
     onBeforeMount(() => {
       checkLang(lang);
     })
 
+    // When the component is mounted, it will add the event listener to the hamburger
     onMounted(() => {
       sidebarChangeStatus();
     })

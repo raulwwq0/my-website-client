@@ -67,6 +67,7 @@ export default {
   setup() {
     const api = process.env.VUE_APP_API;
 
+    // Trigger animation when hovering over a project, using the id as a key
     function infoHoverON(_id) {
       let classID = ".project-info-" + _id;
       gsap.to(classID, {
@@ -76,6 +77,7 @@ export default {
       });
     }
 
+    // Trigger animation when leaving a project, using the id as a key
     function infoHoverOFF(_id) {
       let classID = ".project-info-" + _id;
       gsap.to(classID, {
@@ -85,6 +87,7 @@ export default {
       });
     }
 
+    // When getting all projects from the API, trigger animation to make them appear
     function entryAnimation() {
       gsap.fromTo(
         ".project",
@@ -93,6 +96,7 @@ export default {
       );
     }
 
+    // Get all projects from the API using axios
     function getProjects() {
       axios.get(api + "/get-projects").then((res) => {
         if (res.data.status == "success") {
@@ -104,6 +108,7 @@ export default {
       }
     }
 
+    // Return all necessary data to the component
     return { api, infoHoverON, infoHoverOFF, entryAnimation, getProjects };
   },
   mounted() {

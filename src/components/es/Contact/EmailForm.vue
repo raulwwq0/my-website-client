@@ -19,6 +19,13 @@ import gsap from "gsap";
 export default {
   name: "MyEmailForm",
   setup() {
+
+    /*
+      To send an email, I use the emailjs-com library, because it's a
+      library that allows me to send emails from my website without
+      having to configure anything in the backend.
+    */
+
     const service_id = process.env.VUE_APP_EMAILJS_SERVICE_ID;
     const template_id = process.env.VUE_APP_EMAILJS_TEMPLATE_ID;
     const user_id = process.env.VUE_APP_EMAILJS_USER_ID;

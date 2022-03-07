@@ -101,6 +101,7 @@ export default {
 
     }
 
+    // Since the Discord tag is not a link, we need to copy it to the clipboard
     function copyDiscordUsername(className) {
       var aux = document.createElement("input");
 

@@ -22,6 +22,8 @@ import store from "../store";
 export default {
   name: "MyError",
   setup() {
+
+    // This setup only contains things related with the language
     function checkLang(lang) {
       if (lang.value === null) {
         var userLang = navigator.language || navigator.userLanguage;

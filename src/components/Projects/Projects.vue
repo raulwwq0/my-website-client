@@ -19,7 +19,7 @@
       />
 
       <img
-        src="../../../assets/images/loading.svg"
+        src="../../assets/images/loading.svg"
         alt="Cargando..."
         v-if="!project.image"
       />
@@ -46,7 +46,7 @@
   </div>
 
   <img
-  src="../../../assets/images/loading.svg"
+  src="../../assets/images/loading.svg"
   alt="Cargando..."
   v-if="!projects"
   />
@@ -55,7 +55,7 @@
 <script>
 import gsap from "gsap";
 import axios from "axios";
-import store from "../../../store";
+import store from "../../store";
 import {ref, watchEffect} from 'vue';
 
 export default {

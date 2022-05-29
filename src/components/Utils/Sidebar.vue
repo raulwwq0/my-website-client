@@ -4,13 +4,13 @@
       <div class="hamburger-wrap">
         <img
           class="icons"
-          src="../assets/images/hamburger.svg"
+          src="../../assets/images/hamburger.svg"
           alt="Open Sidebar"
           v-if="!isSidebarOFF"
         />
         <img
           class="icons"
-          src="../assets/images/close.svg"
+          src="../../assets/images/close.svg"
           alt="Close Sidebar"
           v-if="isSidebarOFF"
         />
@@ -20,7 +20,7 @@
     <div id="menu-icons">
       <router-link :to="`/home`" exact-active-class="active">
         <div class="icon-wrap">
-          <img class="icons" src="../assets/images/home.svg" alt="Inicio" />
+          <img class="icons" src="../../assets/images/home.svg" alt="Inicio" />
           <p class="icon-text">
             <span>{{ $t("sidebar.home") }}</span>
           </p>
@@ -31,7 +31,7 @@
         <div class="icon-wrap">
           <img
             class="icons"
-            src="../assets/images/projects.svg"
+            src="../../assets/images/projects.svg"
             alt="Proyectos"
           />
           <p class="icon-text">
@@ -44,7 +44,7 @@
         <div class="icon-wrap">
           <img
             class="icons"
-            src="../assets/images/contact.svg"
+            src="../../assets/images/contact.svg"
             alt="Contacto"
           />
           <p class="icon-text">
@@ -59,7 +59,7 @@
           <img
             id="github-icon"
             class="icons"
-            src="../assets/images/logo/github.svg"
+            src="../../assets/images/logo/github.svg"
             alt="GitHub"
           />
           <p class="icon-text">GitHub</p>
@@ -72,7 +72,7 @@
 <script>
 import { onBeforeMount, onMounted, ref, watchEffect } from "vue";
 import gsap from "gsap";
-import store from "../store";
+import store from "../../store";
 import LangSwitcher from "./LangSwitcher";
 
 export default {

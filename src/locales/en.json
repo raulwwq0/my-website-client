@@ -45,6 +45,8 @@
         "home": "Home",
         "projects": "Projects",
         "contact": "Contact"
-    }
+    },
+
+    "error": "The route you want to access doesn't exist, check if the URL is correct."
 
 }

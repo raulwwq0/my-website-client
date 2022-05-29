@@ -2,7 +2,7 @@
   <div id="options-buttons">
     <div id="lang-switcher">
       <span class="es">
-        <img src="../assets/images/spain.svg" alt="Spanish" />
+        <img src="../../assets/images/spain.svg" alt="Spanish" />
       </span>
       <input
         id="lang-checkbox"
@@ -11,7 +11,7 @@
         @change="changeLang()"
       />
       <span class="en">
-        <img src="../assets/images/britain.svg" alt="English" />
+        <img src="../../assets/images/britain.svg" alt="English" />
       </span>
     </div>
   </div>
@@ -19,8 +19,8 @@
 
 <script>
 import { onBeforeMount, onMounted } from "vue";
-import store from "../store";
-import i18n from "../i18n";
+import store from "../../store";
+import i18n from "../../i18n";
 
 export default {
   name: "MyLangSwitcher",

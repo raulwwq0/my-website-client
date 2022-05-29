@@ -14,14 +14,14 @@
     </div>
     <picture>
       <source
-        srcset="../../../assets/images/me.webp"
+        srcset="../../assets/images/me.webp"
         type="image/webp"
       />
       <source
-        srcset="../../../assets/images/me.jpg"
+        srcset="../../assets/images/me.jpg"
         type="image/jpeg"
       />
-      <img src="../../../assets/images/me.jpg" />
+      <img src="../../assets/images/me.jpg" />
     </picture>
   </div>
 </template>

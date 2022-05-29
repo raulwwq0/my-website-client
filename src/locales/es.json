@@ -45,6 +45,8 @@
         "home": "Inicio",
         "projects": "Proyectos",
         "contact": "Contacto"
-    }
+    },
+
+    "error": "La ruta a la que intentas acceder no existe, comprueba si la URL es correcta."
 
 }

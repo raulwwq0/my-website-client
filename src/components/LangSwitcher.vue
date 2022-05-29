@@ -20,18 +20,14 @@
 <script>
 import { onBeforeMount, onMounted } from "vue";
 import store from "../store";
-import router from "../router/router";
+import i18n from "../i18n";
 
 export default {
-  name: "MyButtons",
+  name: "MyLangSwitcher",
   setup() {
     function changeLang() {
       store.commit("CHANGE_LANG");
-      var currentPath = router.currentRoute.value.path;
-
-      currentPath = currentPath.slice(4, currentPath.length);
-
-      router.push({ path: `/${localStorage.getItem("lang")}/${currentPath}` });
+      i18n.global.locale.value = store.state.lang;
     }
 
     function setDefaultLang(){
@@ -40,14 +36,8 @@ export default {
       if (localStorage.getItem("lang") === null) {
         if (userLang.includes("es")) {
           localStorage.setItem("lang", "es");
-          router.push({
-            path: `/es/home`,
-          });
         } else{
           localStorage.setItem("lang", "en");
-          router.push({
-            path: `/en/home`,
-          });
         }
       }
     }
@@ -67,7 +57,7 @@ export default {
     });
 
     onMounted(() => {
-        getLangFromLocalStorage();
+      getLangFromLocalStorage();
     })
 
     return { changeLang };

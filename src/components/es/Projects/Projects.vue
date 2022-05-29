@@ -1,10 +1,8 @@
 <template>
-  <h1 class="title">Proyectos</h1>
+  <h1 class="title">{{ $t("projects.title") }}</h1>
 
   <p id="projects-section-text" class="section-text">
-    Esta es la lista de todos los proyectos que he realizado desde mis comienzos
-    como desarrollador. Visita mi GitHub para ver los repositorios de cada
-    proyecto.
+    {{ $t("projects.first-p") }}
   </p>
 
   <div id="projects" v-if="projects">
@@ -31,15 +29,16 @@
           <h2>{{ project.title }}</h2>
         </div>
 
-        <p>{{ project.description_es }}</p>
+        <p v-if="lang_storage == 'es'">{{ project.description_es }}</p>
+        <p v-if="lang_storage == 'en'">{{ project.description_en }}</p>
 
         <div id="buttons">
           <form id="repo-button" :action="project.repo" target="_blank" v-if="project.repo">
-            <button>Ver repositorio</button>
+            <button>{{ $t("projects.button-repo") }}</button>
           </form>
 
           <form id="web-button" :action="project.link" target="_blank" v-if="project.link">
-            <button>Ir a la web</button>
+            <button>{{ $t("projects.button-link") }}</button>
           </form>
         </div>
       </div>
@@ -56,6 +55,8 @@
 <script>
 import gsap from "gsap";
 import axios from "axios";
+import store from "../../../store";
+import {ref, watchEffect} from 'vue';
 
 export default {
   name: "MyProjects",
@@ -66,6 +67,12 @@ export default {
   },
   setup() {
     const api = process.env.VUE_APP_API;
+
+    var lang_storage = ref(store.state.lang);
+
+    watchEffect(() => {
+      lang_storage.value = store.state.lang;
+    });
 
     // Trigger animation when hovering over a project, using the id as a key
     function infoHoverON(_id) {
@@ -109,7 +116,7 @@ export default {
     }
 
     // Return all necessary data to the component
-    return { api, infoHoverON, infoHoverOFF, entryAnimation, getProjects };
+    return { api, lang_storage, infoHoverON, infoHoverOFF, entryAnimation, getProjects };
   },
   mounted() {
     this.getProjects();

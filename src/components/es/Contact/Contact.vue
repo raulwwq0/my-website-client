@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title">Contacto</h1>
+  <h1 class="title">{{ $t("contact.title") }}</h1>
 
   <div id="contact">
     <EmailForm />

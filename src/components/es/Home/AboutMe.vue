@@ -1,23 +1,15 @@
 <template>
   <div id="about-me">
     <div id="about-text">
-      <h2 class="subtitle">Sobre mi</h2>
+      <h2 class="subtitle">{{ $t("home.about-me.subtitle") }}</h2>
       <p>
-        Me llamo Raúl y soy de Málaga. Programo desde los 15 años, cuando
-        descubrí el lenguaje de programación Python gracias a mi profesor de TIC
-        (Tecnologías de la Información y Comunicación).
+        {{ $t("home.about-me.first-p") }}
       </p>
       <p>
-        Este fue el comienzo de mi camino de aprendizaje autodidacta, que
-        combinándolo con varios cursos en los que aprendí nuevos lenguajes y
-        tecnologías, me han permitido desarrollar una gran capacidad para
-        resolver problemas, conviertiéndome en una persona en la que se puede
-        depositar una gran confianza. También aprecio mucho el trabajo en
-        equipo, en el que podría aportar lo mejor de mi.
+        {{ $t("home.about-me.second-p") }}
       </p>
       <p>
-        Actualmente mi meta es el desarrollo web, sin descartar a largo plazo el
-        desarrollo de aplicaciones móviles y videojuegos.
+        {{ $t("home.about-me.third-p") }}
       </p>
     </div>
     <picture>

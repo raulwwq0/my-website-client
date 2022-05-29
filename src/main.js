@@ -2,9 +2,11 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router/router';
 import store from './store';
+import i18n from './i18n';
 
 const app = createApp(App);
 
-app.use(router);
-app.use(store);
-app.mount('#app');
+app.use(router)
+   .use(store)
+   .use(i18n)
+   .mount('#app');

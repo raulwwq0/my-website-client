@@ -5,30 +5,29 @@
         <img
           class="icons"
           src="../assets/images/hamburger.svg"
-          alt="Abrir Menú"
+          alt="Open Sidebar"
           v-if="!isSidebarOFF"
         />
         <img
           class="icons"
           src="../assets/images/close.svg"
-          alt="Abrir Menú"
+          alt="Close Sidebar"
           v-if="isSidebarOFF"
         />
       </div>
     </div>
-    <Buttons />
+    <LangSwitcher />
     <div id="menu-icons">
-      <router-link :to="`/${lang}/home`" exact-active-class="active">
+      <router-link :to="`/home`" exact-active-class="active">
         <div class="icon-wrap">
           <img class="icons" src="../assets/images/home.svg" alt="Inicio" />
           <p class="icon-text">
-            <span v-if="lang === 'es'">Inicio</span>
-            <span v-if="lang === 'en'">Home</span>
+            <span>{{ $t("sidebar.home") }}</span>
           </p>
         </div>
       </router-link>
 
-      <router-link :to="`/${lang}/projects`" exact-active-class="active">
+      <router-link :to="`/projects`" exact-active-class="active">
         <div class="icon-wrap">
           <img
             class="icons"
@@ -36,13 +35,12 @@
             alt="Proyectos"
           />
           <p class="icon-text">
-            <span v-if="lang === 'es'">Proyectos</span>
-            <span v-if="lang === 'en'">Projects</span>
+            <span>{{ $t("sidebar.projects") }}</span>
           </p>
         </div>
       </router-link>
 
-      <router-link :to="`/${lang}/contact`" exact-active-class="active">
+      <router-link :to="`/contact`" exact-active-class="active">
         <div class="icon-wrap">
           <img
             class="icons"
@@ -50,8 +48,7 @@
             alt="Contacto"
           />
           <p class="icon-text">
-            <span v-if="lang === 'es'">Contacto</span>
-            <span v-if="lang === 'en'">Contact</span>
+            <span>{{ $t("sidebar.contact") }}</span>
           </p>
         </div>
       </router-link>
@@ -76,12 +73,12 @@
 import { onBeforeMount, onMounted, ref, watchEffect } from "vue";
 import gsap from "gsap";
 import store from "../store";
-import Buttons from "./Buttons";
+import LangSwitcher from "./LangSwitcher";
 
 export default {
   name: "MySidebar",
   components: {
-    Buttons,
+    LangSwitcher,
   },
   setup() {
     // By default, the sidebar is closed

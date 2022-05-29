@@ -1,9 +1,8 @@
 <template>
   <div id="skills">
-    <h2 class="subtitle">Mis Habilidades</h2>
+    <h2 class="subtitle">{{ $t("home.skills.subtitle") }}</h2>
     <p>
-      Todas las habilidades las he aprendido de forma autodidacta y las he
-      puesto en prácticas en varios proyectos.
+      {{ $t("home.skills.first-p") }}
     </p>
     <div id="skills-svg">
       <img src="../../../assets/images/logo/html5.svg" title="HTML5"/>

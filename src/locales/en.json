@@ -1,0 +1,50 @@
+{
+    "home": {
+        "presentation-banner": {
+            "name": "Raúl Aguilar",
+            "subtitle": "Software Development Student"
+        },
+        "about-me": {
+            "subtitle": "About Me",
+            "first-p": "My name is Raúl and I'm from Málaga. I have been coding since I was 15, when my ICT (Information and Communication Technologies) teacher discovered me Python, a programming language.",
+            "second-p": "That was the beginning of my travel in self-taught learning, and also with the help from some courses where I learned new programming languages and technologies, allowing me to develop a huge ability to solve problems and becoming myself in a person who you can put your trust in. In addition, I love working in a team, where I will always try to do my best.",
+            "third-p": "Nowadays, my main goal is web development, without forgetting about mobile and videogames development."
+        },
+        "skills": {
+            "subtitle": "My Skills",
+            "first-p": "I learn every skill by myself and I have used them in some projects."
+        }
+    },
+
+    "projects": {
+        "title": "Projects",
+        "first-p": "Here you have a list of all the projects I did since I started as a developer. Visit my GitHub profile to see every repository of each project.",
+        "button-repo": "See repository",
+        "button-link": "Go to website"
+    },
+
+    "contact": {
+        "title": "Contact",
+        "email-form": {
+            "intro-p": "Use this form to send me an email",
+            "placeholder-name": "Name",
+            "placeholder-email": "Email",
+            "placeholder-message": "Message",
+            "button-send": "Send",
+            "success-message": "The email has been sent successfully",
+            "error-message": "The email has not been sent"
+        },
+
+        "social": {
+            "intro-p": "You can also find me here:",
+            "tag-copied": "You have copied my discord tag to your clipboard"
+        }
+    },
+
+    "sidebar": {
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact"
+    }
+
+}

@@ -1,0 +1,50 @@
+{
+    "home": {
+        "presentation-banner": {
+            "name": "Raúl Aguilar",
+            "subtitle": "Estudiante de Desarrollo de Software"
+        },
+        "about-me": {
+            "subtitle": "Sobre mi",
+            "first-p": "Me llamo Raúl y soy de Málaga. Programo desde los 15 años, cuando descubrí el lenguaje de programación Python gracias a mi profesor de TIC (Tecnologías de la Información y Comunicación).",
+            "second-p": "Este fue el comienzo de mi camino de aprendizaje autodidacta, que combinándolo con varios cursos en los que aprendí nuevos lenguajes y tecnologías, me han permitido desarrollar una gran capacidad para resolver problemas, conviertiéndome en una persona en la que se puede depositar una gran confianza. También aprecio mucho el trabajo en equipo, en el que podría aportar lo mejor de mi.",
+            "third-p": "Actualmente mi meta es el desarrollo web, sin descartar a largo plazo el desarrollo de aplicaciones móviles y videojuegos."
+        },
+        "skills": {
+            "subtitle": "Mis Habilidades",
+            "first-p": "Todas las habilidades las he aprendido de forma autodidacta y las he puesto en prácticas en varios proyectos."
+        }
+    },
+
+    "projects": {
+        "title": "Proyectos",
+        "first-p": "Esta es la lista de todos los proyectos que he realizado desde mis comienzos como desarrollador. Visita mi GitHub para ver los repositorios de cada proyecto.",
+        "button-repo": "Ver repositorio",
+        "button-link": "Ir a la web"
+    },
+
+    "contact": {
+        "title": "Contacto",
+        "email-form": {
+            "intro-p": "Usa este formulario para contactarme",
+            "placeholder-name": "Nombre",
+            "placeholder-email": "Correo",
+            "placeholder-message": "Mensaje",
+            "button-send": "Enviar",
+            "success-message": "El correo se ha enviado con éxito",
+            "error-message": "El correo no se ha podido enviar"
+        },
+
+        "social": {
+            "intro-p": "También puedes encontrarme en:",
+            "tag-copied": "Has copiado mi tag de Discord al portapapeles"
+        }
+    },
+
+    "sidebar": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    }
+
+}

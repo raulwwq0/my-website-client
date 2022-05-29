@@ -1,6 +1,6 @@
 <template>
   <div id="different-ways-contact">
-    <p class="first-p">También puedes encontrarme en:</p>
+    <p class="first-p">{{ $t("contact.social.intro-p") }}</p>
     <div id="contact-ways">
       <div class="contact-icon-wrap">
         <a href="https://www.linkedin.com/in/agraul21/" target="_blank">
@@ -56,7 +56,7 @@
   </div>
 
   <div class="advice" id="tag-was-copied">
-    Has copiado mi tag de Discord al portapapeles
+    {{ $t("contact.social.tag-copied") }}
   </div>
 </template>
 

@@ -2,19 +2,13 @@ import { createWebHistory, createRouter} from 'vue-router';
 import HomeES from '../components/es/Home/Home';
 import ProjectsES from '../components/es/Projects/Projects';
 import ContactES from '../components/es/Contact/Contact';
-import HomeEN from '../components/en/Home/Home';
-import ProjectsEN from '../components/en/Projects/Projects';
-import ContactEN from '../components/en/Contact/Contact';
 import ErrorComponent from '../components/Error';
 
 const routes = [
-    {path: '/', redirect: '/es/home'},
-    {path: '/es/home', name: 'HomeES', component: HomeES},
-    {path: '/es/projects', name: 'ProjectsES', component: ProjectsES},
-    {path: '/es/contact', name: 'ContactES', component: ContactES},
-    {path: '/en/home', name: 'HomeEN', component: HomeEN},
-    {path: '/en/projects', name: 'ProjectsEN', component: ProjectsEN},
-    {path: '/en/contact', name: 'ContactEN', component: ContactEN},
+    {path: '/', redirect: '/home'},
+    {path: '/home', name: 'HomeES', component: HomeES},
+    {path: '/projects', name: 'ProjectsES', component: ProjectsES},
+    {path: '/contact', name: 'ContactES', component: ContactES},
     {path: '/:catchAll(.*)', name: 'ErrorComponent', component: ErrorComponent}
 ]
 

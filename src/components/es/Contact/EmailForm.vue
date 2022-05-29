@@ -1,15 +1,15 @@
 <template>
   <form id="email-form" @submit.prevent="sendEmail">
-    <p class="first-p">Usa este formulario para contactarme</p>
-    <input type="text" name="user_name" placeholder="Nombre" required />
-    <input type="text" name="user_email" placeholder="Correo" required />
-    <textarea name="message" placeholder="Mensaje" required />
-    <input type="submit" value="Enviar" />
+    <p class="first-p">{{ $t("contact.email-form.intro-p") }}</p>
+    <input type="text" name="user_name" :placeholder="$t('contact.email-form.placeholder-name')" required />
+    <input type="text" name="user_email" :placeholder="$t('contact.email-form.placeholder-email')" required />
+    <textarea name="message" :placeholder="$t('contact.email-form.placeholder-message')" required />
+    <input type="submit" :value="$t('contact.email-form.button-send')" />
   </form>
 
-  <div class="advice" id="email-sent">El correo se ha enviado con éxito</div>
+  <div class="advice" id="email-sent">{{ $t("contact.email-form.success-message") }}</div>
 
-  <div class="advice" id="email-fail">El correo no se ha podido enviar</div>
+  <div class="advice" id="email-fail">{{ $t("contact.email-form.error-message") }}</div>
 </template>
 
 <script>

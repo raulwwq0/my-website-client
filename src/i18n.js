@@ -20,7 +20,7 @@ function loadLocaleMessages () {
 const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: "es",
+  locale: localStorage.getItem("lang") || "en",
   fallbackLocale: "en",
   messages: loadLocaleMessages(),
 });

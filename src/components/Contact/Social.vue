@@ -3,7 +3,7 @@
     <p class="first-p">{{ $t("contact.social.intro-p") }}</p>
     <div id="contact-ways">
       <div class="contact-icon-wrap">
-        <a href="https://www.linkedin.com/in/agraul21/" target="_blank">
+        <a href="https://www.linkedin.com/in/raulaguilargarcia/" target="_blank">
           <img
             class="contact-icons linkedin-svg"
             src="../../assets/images/logo/linkedin.svg"

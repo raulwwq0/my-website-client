@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1600px){
     .title{
         width: 30% !important;
     }
@@ -32,6 +32,21 @@
 
         #different-ways-contact{
             margin-top: -20vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #projects{
+        grid-template-columns: repeat(3, 1fr);
+        .project{
+            .project-info{
+                .project-title{
+                    h2{
+                        font-size: 2vw;
+                    }
+                }
+            }
         }
     }
 }
@@ -165,7 +180,7 @@
                 
                 .project-title{
                     h2{
-                        font-size: 3.5vw;
+                        font-size: 5vw;
                     }
                 }
             }

@@ -108,9 +108,11 @@ export default {
       axios.get(api + "/get-projects").then((res) => {
         if (res.data.status == "success") {
           this.projects = res.data.projects;
+        } else {
+          console.log("Cant");
         }
       });
-      for (var project in this.projects) {
+      for (let project in this.projects) {
         this.projects[project].className += project._id;
       }
     }
